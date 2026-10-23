@@ -1,6 +1,6 @@
 # Totem Particles
 
-![Totem Particles preview]([https://github.com/](https://github.com/Myowiri/TotemParticles/blob/main/totemparticles.gif))
+![Totem Particles preview](https://raw.githubusercontent.com/Myowiri/TotemParticles/main/totemparticles.gif)
 
 Give your Totem of Undying activations a fresh look with Totem Particles! Customize the particle effects to match your style, from subtle bursts to bold, colorful displays.
 

@@ -3,12 +3,12 @@ package meow.cats.gui;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 
-public class ModMenu implements ModMenuApi {
+public class ModMenuTotemParticles implements ModMenuApi {
 
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
         return TotemParticlesMod -> {
-            return ConfigGuiTotemParticles.INSTANCE;
+            return ConfigGui.INSTANCE;
         };
     }
 }

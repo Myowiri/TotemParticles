@@ -1,6 +1,6 @@
 package meow.cats.mixin;
 
-import meow.cats.gui.ConfigGuiTotemParticles;
+import meow.cats.gui.ConfigGui;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
 import net.minecraft.client.gui.components.Button;
@@ -30,7 +30,7 @@ public abstract class MixinAccessibilityOptionsScreen extends OptionsSubScreen {
         list.addSmall(Collections.singletonList(Button.builder(
                 Component.literal("Totem Particles"),
                 button -> Minecraft.getInstance().setScreenAndShow(
-                        ConfigGuiTotemParticles.INSTANCE
+                        ConfigGui.INSTANCE
                 )
         ).build()));
     }

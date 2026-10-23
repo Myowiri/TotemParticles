@@ -18,7 +18,7 @@
 			"meow.cats.TotemParticles"
 		],
 		"modmenu": [
-			"meow.cats.gui.ModMenu"
+			"meow.cats.gui.ModMenuTotemParticles"
 		]
 	},
 	"mixins": [

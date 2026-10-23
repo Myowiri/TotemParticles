@@ -30,8 +30,8 @@ public class Slider {
         this.x = x;
         this.y = y;
 
-        int width = ConfigGuiTotemParticles.INSTANCE.Width;
-        int height = ConfigGuiTotemParticles.INSTANCE.Height;
+        int width = ConfigGui.INSTANCE.Width;
+        int height = ConfigGui.INSTANCE.Height;
 
         context.fill(x, y, x + width, y + height, 0x4F000000);
 
@@ -64,8 +64,8 @@ public class Slider {
     }
 
     public boolean mouseClicked(int mouseX, int mouseY) {
-        int width = ConfigGuiTotemParticles.INSTANCE.Width;
-        int height = ConfigGuiTotemParticles.INSTANCE.Height;
+        int width = ConfigGui.INSTANCE.Width;
+        int height = ConfigGui.INSTANCE.Height;
 
         if (mouseX < x || mouseX >= x + width
                 || mouseY < y || mouseY >= y + height) {
@@ -89,7 +89,7 @@ public class Slider {
 
     private void setFromMouse(int mouseX) {
         int barX = x + 6;
-        int barWidth = ConfigGuiTotemParticles.INSTANCE.Width - 12;
+        int barWidth = ConfigGui.INSTANCE.Width - 12;
 
         float progress = (float) (mouseX - barX) / barWidth;
         progress = Math.max(0.0f, Math.min(1.0f, progress));

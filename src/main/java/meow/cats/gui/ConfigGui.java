@@ -10,7 +10,7 @@ import net.minecraft.network.chat.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConfigGuiTotemParticles extends Screen {
+public class ConfigGui extends Screen {
 
 
     private final List<Button> buttons = new ArrayList<>();
@@ -18,19 +18,19 @@ public class ConfigGuiTotemParticles extends Screen {
     private final List<ColorPicker> colorPickers = new ArrayList<>();
 
 
-    public static ConfigGuiTotemParticles INSTANCE;
+    public static ConfigGui INSTANCE;
     public int Width = 160;
     public int Height = 20;
 
 
-    protected ConfigGuiTotemParticles() {
+    protected ConfigGui() {
         super(Component.literal("SmoothCamera"));
         setInstance();
         addButtons();
     }
 
     static {
-        INSTANCE = new ConfigGuiTotemParticles();
+        INSTANCE = new ConfigGui();
     }
 
     private void setInstance() {
@@ -104,22 +104,22 @@ public class ConfigGuiTotemParticles extends Screen {
         int screenWidth = Minecraft.getInstance().getWindow().getGuiScaledWidth();
         int screenHeight = Minecraft.getInstance().getWindow().getGuiScaledHeight();
 
-        int buttonWidth = ConfigGuiTotemParticles.INSTANCE.Width;
-        int buttonHeight = ConfigGuiTotemParticles.INSTANCE.Height;
+        int buttonWidth = ConfigGui.INSTANCE.Width;
+        int buttonHeight = ConfigGui.INSTANCE.Height;
         int spacing = 5;
 
         int x = (screenWidth - buttonWidth) / 2;
         int totalHeight = buttonHeight * 2 + spacing;
-        int y = (screenHeight - totalHeight) / 3 - 50;
+        int y = (screenHeight - totalHeight) / 2 -140;
 
         for (Button button : buttons) {
             button.render(context, x, y);
-            y += ConfigGuiTotemParticles.INSTANCE.Height + 5;
+            y += ConfigGui.INSTANCE.Height + 5;
         }
 
         for (Slider slider : sliders) {
             slider.render(context, x, y);
-            y += ConfigGuiTotemParticles.INSTANCE.Height + 5;
+            y += ConfigGui.INSTANCE.Height + 5;
         }
 
         for (ColorPicker colorPicker : colorPickers) {

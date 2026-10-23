@@ -23,8 +23,8 @@ public class Button {
     }
 
     public void render(GuiGraphicsExtractor context, int x, int y) {
-        int width = ConfigGui.INSTANCE.Width;
-        int height = ConfigGui.INSTANCE.Height;
+        int width = ConfigGuiTotemParticles.INSTANCE.Width;
+        int height = ConfigGuiTotemParticles.INSTANCE.Height;
 
 
 
@@ -48,8 +48,8 @@ public class Button {
     }
 
     public boolean mouseClicked(int mouseX, int mouseY) {
-        int width = ConfigGui.INSTANCE.Width;
-        int height = ConfigGui.INSTANCE.Height;
+        int width = ConfigGuiTotemParticles.INSTANCE.Width;
+        int height = ConfigGuiTotemParticles.INSTANCE.Height;
 
         boolean inside = mouseX >= x && mouseX < x + width
                 && mouseY >= y && mouseY < y + height;

@@ -8,7 +8,7 @@ public class ModMenu implements ModMenuApi {
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
         return TotemParticlesMod -> {
-            return ConfigGui.INSTANCE;
+            return ConfigGuiTotemParticles.INSTANCE;
         };
     }
 }

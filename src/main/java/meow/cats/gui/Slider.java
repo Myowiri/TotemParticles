@@ -1,6 +1,5 @@
 package meow.cats.gui;
 
-import meow.cats.gui.ConfigGui;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 
@@ -31,8 +30,8 @@ public class Slider {
         this.x = x;
         this.y = y;
 
-        int width = ConfigGui.INSTANCE.Width;
-        int height = ConfigGui.INSTANCE.Height;
+        int width = ConfigGuiTotemParticles.INSTANCE.Width;
+        int height = ConfigGuiTotemParticles.INSTANCE.Height;
 
         context.fill(x, y, x + width, y + height, 0x4F000000);
 
@@ -65,8 +64,8 @@ public class Slider {
     }
 
     public boolean mouseClicked(int mouseX, int mouseY) {
-        int width = ConfigGui.INSTANCE.Width;
-        int height = ConfigGui.INSTANCE.Height;
+        int width = ConfigGuiTotemParticles.INSTANCE.Width;
+        int height = ConfigGuiTotemParticles.INSTANCE.Height;
 
         if (mouseX < x || mouseX >= x + width
                 || mouseY < y || mouseY >= y + height) {
@@ -90,7 +89,7 @@ public class Slider {
 
     private void setFromMouse(int mouseX) {
         int barX = x + 6;
-        int barWidth = ConfigGui.INSTANCE.Width - 12;
+        int barWidth = ConfigGuiTotemParticles.INSTANCE.Width - 12;
 
         float progress = (float) (mouseX - barX) / barWidth;
         progress = Math.max(0.0f, Math.min(1.0f, progress));

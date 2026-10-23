@@ -110,7 +110,7 @@ public class ConfigGui extends Screen {
 
         int x = (screenWidth - buttonWidth) / 2;
         int totalHeight = buttonHeight * 2 + spacing;
-        int y = (screenHeight - totalHeight) / 2 -140;
+        int y = (screenHeight - totalHeight) / 3-60;
 
         for (Button button : buttons) {
             button.render(context, x, y);

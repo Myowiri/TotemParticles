@@ -16,7 +16,6 @@ public class TotemParticles implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		Config.load();
-		Config.save();
 	}
 
 

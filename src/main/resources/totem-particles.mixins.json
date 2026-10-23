@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "meow.cats.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"MixinTotemParticles",
+		"MixinLocalPlayer"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
